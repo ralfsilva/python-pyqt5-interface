@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>600</height>
+    <height>629</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -45,7 +45,7 @@
        <property name="geometry">
         <rect>
          <x>170</x>
-         <y>70</y>
+         <y>30</y>
          <width>451</width>
          <height>71</height>
         </rect>
@@ -59,12 +59,12 @@
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: #000;
+        <string notr="true">background-color: #0000ff;
 color: #FFF;
 border-radius: 10px;</string>
        </property>
        <property name="text">
-        <string>Raiz Quadrada</string>
+        <string>Verificação Operação</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -73,9 +73,9 @@ border-radius: 10px;</string>
       <widget class="QLabel" name="label_2">
        <property name="geometry">
         <rect>
-         <x>310</x>
-         <y>164</y>
-         <width>21</width>
+         <x>290</x>
+         <y>116</y>
+         <width>71</width>
          <height>31</height>
         </rect>
        </property>
@@ -85,14 +85,14 @@ border-radius: 10px;</string>
         </font>
        </property>
        <property name="text">
-        <string>A</string>
+        <string>Número 1</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_lado1">
+      <widget class="QLineEdit" name="lineEdit">
        <property name="geometry">
         <rect>
-         <x>339</x>
-         <y>165</y>
+         <x>370</x>
+         <y>120</y>
          <width>141</width>
          <height>31</height>
         </rect>
@@ -101,10 +101,10 @@ border-radius: 10px;</string>
       <widget class="QLabel" name="label_verificar">
        <property name="geometry">
         <rect>
-         <x>60</x>
-         <y>440</y>
-         <width>691</width>
-         <height>81</height>
+         <x>190</x>
+         <y>520</y>
+         <width>191</width>
+         <height>71</height>
         </rect>
        </property>
        <property name="font">
@@ -116,7 +116,8 @@ border-radius: 10px;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: #000;
+        <string notr="true">
+background-color: #000;
 color: #FFF;
 border-radius: 10px;</string>
        </property>
@@ -130,9 +131,9 @@ border-radius: 10px;</string>
       <widget class="QPushButton" name="pb_verificar">
        <property name="geometry">
         <rect>
-         <x>334</x>
-         <y>380</y>
-         <width>151</width>
+         <x>343</x>
+         <y>285</y>
+         <width>111</width>
          <height>41</height>
         </rect>
        </property>
@@ -149,15 +150,25 @@ color: #FFF;
 border-radius: 10px;</string>
        </property>
        <property name="text">
-        <string>Verificar Raízes</string>
+        <string>Verificar</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>170</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
        </property>
       </widget>
       <widget class="QLabel" name="label_3">
        <property name="geometry">
         <rect>
-         <x>310</x>
-         <y>280</y>
-         <width>16</width>
+         <x>290</x>
+         <y>166</y>
+         <width>71</width>
          <height>31</height>
         </rect>
        </property>
@@ -167,24 +178,14 @@ border-radius: 10px;</string>
         </font>
        </property>
        <property name="text">
-        <string>B</string>
+        <string>Número 2</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_lado2">
+      <widget class="QLineEdit" name="lineEdit_Escolha">
        <property name="geometry">
         <rect>
-         <x>340</x>
-         <y>280</y>
-         <width>141</width>
-         <height>31</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineEdit_lado3">
-       <property name="geometry">
-        <rect>
-         <x>340</x>
-         <y>330</y>
+         <x>371</x>
+         <y>234</y>
          <width>141</width>
          <height>31</height>
         </rect>
@@ -193,9 +194,9 @@ border-radius: 10px;</string>
       <widget class="QLabel" name="label_4">
        <property name="geometry">
         <rect>
-         <x>310</x>
-         <y>330</y>
-         <width>16</width>
+         <x>223</x>
+         <y>230</y>
+         <width>141</width>
          <height>31</height>
         </rect>
        </property>
@@ -205,32 +206,67 @@ border-radius: 10px;</string>
         </font>
        </property>
        <property name="text">
-        <string>C</string>
+        <string>Escolha a Operação</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pb_verificaA">
+      <widget class="QLabel" name="label_verificar_2">
        <property name="geometry">
         <rect>
-         <x>280</x>
-         <y>220</y>
-         <width>261</width>
-         <height>41</height>
+         <x>410</x>
+         <y>520</y>
+         <width>191</width>
+         <height>71</height>
         </rect>
        </property>
        <property name="font">
         <font>
+         <family>Arial</family>
          <pointsize>12</pointsize>
          <weight>75</weight>
          <bold>true</bold>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: #0055ff;
+        <string notr="true">
+background-color: #000;
 color: #FFF;
 border-radius: 10px;</string>
        </property>
        <property name="text">
-        <string>Verificar se é Raiz Quadrada</string>
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_operacao">
+       <property name="geometry">
+        <rect>
+         <x>264</x>
+         <y>340</y>
+         <width>271</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+background-color: #000;
+color: #FFF;
+border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </widget>

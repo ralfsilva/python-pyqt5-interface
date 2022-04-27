@@ -6,7 +6,6 @@ def verificacao():
     lado2 = float(triangulo.lineEdit_lado2.text())
     lado3 = float(triangulo.lineEdit_lado3.text())
 
-
     if ((lado1 + lado2) > lado3) or ((lado2 + lado3) > lado1) or ((lado1 + lado3) > lado2):
         if lado1 == lado2 == lado3:
             triangulo.label_verificar.setText("Triângulo Equilátero")
@@ -16,7 +15,7 @@ def verificacao():
             
         elif (lado1 != lado2) and (lado2 != lado3) and (lado1 != lado3):
             triangulo.label_verificar.setText("Triângulo Escaleno")
-    
+
     else:
         triangulo.label_verificar.setText("Não é um Triângulo!")
 

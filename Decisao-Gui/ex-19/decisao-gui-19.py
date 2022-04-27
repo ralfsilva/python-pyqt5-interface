@@ -1,8 +1,6 @@
 from PyQt5 import uic, QtWidgets
 
 def verificacao():
-
-    numero = int(mil.lineEdit.text())
     total = numero
 
     centena = 0
@@ -13,7 +11,9 @@ def verificacao():
     sDezenas = ''
     sCentenas = ''
 
-    if numero < 1000 and numero > 0:
+    numero = int(mil.lineEdit.text())
+
+    if numero > 0 and numero < 1000:
         while numero > 99:
             centena += 1
             numero -= 100
@@ -55,12 +55,6 @@ def verificacao():
 
         if (unidade >= 1 and unidade <= 9) and (dezena >= 1 and dezena <= 9) and (centena >= 1 and centena <= 9):
             mil.label_verificar.setText(f'{total} = {centena} {sCentenas}, {dezena} {sDezenas} e {unidade} {sUnidades}')
-
-
-
-
-
-
     else:
         mil.label_verificar.setText(f'Digite um Número maior que 0 e menor que 1000.')
 
